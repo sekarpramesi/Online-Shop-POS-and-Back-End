@@ -43,15 +43,15 @@
             this.tabMaster = new MetroFramework.Controls.MetroTabControl();
             this.tabMasterPegawai = new MetroFramework.Controls.MetroTabPage();
             this.tabMasterSupplier = new MetroFramework.Controls.MetroTabPage();
-            this.tabMasterMember = new MetroFramework.Controls.MetroTabPage();
             this.gridSupplier = new MetroFramework.Controls.MetroGrid();
+            this.tabMasterMember = new MetroFramework.Controls.MetroTabPage();
             ((System.ComponentModel.ISupportInitialize)(this.gridMember)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridPegawai)).BeginInit();
             this.tabMaster.SuspendLayout();
             this.tabMasterPegawai.SuspendLayout();
             this.tabMasterSupplier.SuspendLayout();
-            this.tabMasterMember.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridSupplier)).BeginInit();
+            this.tabMasterMember.SuspendLayout();
             this.SuspendLayout();
             // 
             // gridMember
@@ -94,7 +94,7 @@
             this.gridMember.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.gridMember.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.gridMember.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridMember.Size = new System.Drawing.Size(535, 394);
+            this.gridMember.Size = new System.Drawing.Size(580, 394);
             this.gridMember.TabIndex = 2;
             // 
             // gridPegawai
@@ -124,7 +124,7 @@
             this.gridPegawai.EnableHeadersVisualStyles = false;
             this.gridPegawai.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.gridPegawai.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.gridPegawai.Location = new System.Drawing.Point(9, 28);
+            this.gridPegawai.Location = new System.Drawing.Point(14, 16);
             this.gridPegawai.Name = "gridPegawai";
             this.gridPegawai.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -137,7 +137,7 @@
             this.gridPegawai.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.gridPegawai.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.gridPegawai.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridPegawai.Size = new System.Drawing.Size(543, 360);
+            this.gridPegawai.Size = new System.Drawing.Size(972, 360);
             this.gridPegawai.TabIndex = 2;
             // 
             // metroUserControl1
@@ -190,21 +190,6 @@
             this.tabMasterSupplier.VerticalScrollbarHighlightOnWheel = false;
             this.tabMasterSupplier.VerticalScrollbarSize = 10;
             // 
-            // tabMasterMember
-            // 
-            this.tabMasterMember.Controls.Add(this.gridMember);
-            this.tabMasterMember.HorizontalScrollbarBarColor = true;
-            this.tabMasterMember.HorizontalScrollbarHighlightOnWheel = false;
-            this.tabMasterMember.HorizontalScrollbarSize = 10;
-            this.tabMasterMember.Location = new System.Drawing.Point(4, 38);
-            this.tabMasterMember.Name = "tabMasterMember";
-            this.tabMasterMember.Size = new System.Drawing.Size(1005, 441);
-            this.tabMasterMember.TabIndex = 2;
-            this.tabMasterMember.Text = "Member";
-            this.tabMasterMember.VerticalScrollbarBarColor = true;
-            this.tabMasterMember.VerticalScrollbarHighlightOnWheel = false;
-            this.tabMasterMember.VerticalScrollbarSize = 10;
-            // 
             // gridSupplier
             // 
             this.gridSupplier.AllowUserToResizeRows = false;
@@ -248,6 +233,21 @@
             this.gridSupplier.Size = new System.Drawing.Size(524, 303);
             this.gridSupplier.TabIndex = 2;
             // 
+            // tabMasterMember
+            // 
+            this.tabMasterMember.Controls.Add(this.gridMember);
+            this.tabMasterMember.HorizontalScrollbarBarColor = true;
+            this.tabMasterMember.HorizontalScrollbarHighlightOnWheel = false;
+            this.tabMasterMember.HorizontalScrollbarSize = 10;
+            this.tabMasterMember.Location = new System.Drawing.Point(4, 38);
+            this.tabMasterMember.Name = "tabMasterMember";
+            this.tabMasterMember.Size = new System.Drawing.Size(1005, 441);
+            this.tabMasterMember.TabIndex = 2;
+            this.tabMasterMember.Text = "Member";
+            this.tabMasterMember.VerticalScrollbarBarColor = true;
+            this.tabMasterMember.VerticalScrollbarHighlightOnWheel = false;
+            this.tabMasterMember.VerticalScrollbarSize = 10;
+            // 
             // Master
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -262,8 +262,8 @@
             this.tabMaster.ResumeLayout(false);
             this.tabMasterPegawai.ResumeLayout(false);
             this.tabMasterSupplier.ResumeLayout(false);
-            this.tabMasterMember.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridSupplier)).EndInit();
+            this.tabMasterMember.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

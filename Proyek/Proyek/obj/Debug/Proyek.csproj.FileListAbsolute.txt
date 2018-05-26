@@ -16,3 +16,22 @@ C:\Users\Sekarpramesi\Desktop\Proyek\Proyek\Proyek\obj\Debug\Proyek.Menu.resourc
 C:\Users\Sekarpramesi\Desktop\Proyek\Proyek\Proyek\obj\Debug\Proyek.Inventory.resources
 C:\Users\Sekarpramesi\Desktop\Proyek\Proyek\Proyek\obj\Debug\Proyek.Form1.resources
 C:\Users\Sekarpramesi\Desktop\Proyek\Proyek\Proyek\obj\Debug\Proyek.POS.resources
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\bin\Debug\Proyek.exe.config
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\obj\Debug\Proyek.exe
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\obj\Debug\Proyek.pdb
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\bin\Debug\Proyek.exe
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\bin\Debug\Proyek.pdb
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\bin\Debug\MetroFramework.Design.dll
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\bin\Debug\MetroFramework.dll
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\bin\Debug\MetroFramework.Fonts.dll
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\bin\Debug\Oracle.DataAccess.dll
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\obj\Debug\Proyek.csprojResolveAssemblyReference.cache
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\obj\Debug\Proyek.Form1.resources
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\obj\Debug\Proyek.Inventory.resources
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\obj\Debug\Proyek.Login.resources
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\obj\Debug\Proyek.Master.resources
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\obj\Debug\Proyek.Menu.resources
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\obj\Debug\Proyek.POS.resources
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\obj\Debug\Proyek.Properties.Resources.resources
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\obj\Debug\Proyek.csproj.GenerateResource.Cache
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\obj\Debug\Proyek.POSPayment.resources
