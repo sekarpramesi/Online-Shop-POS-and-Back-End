@@ -41,26 +41,26 @@
             this.btn4 = new MetroFramework.Controls.MetroTile();
             this.btn5 = new MetroFramework.Controls.MetroTile();
             this.btn6 = new MetroFramework.Controls.MetroTile();
-            this.metroTile7 = new MetroFramework.Controls.MetroTile();
-            this.metroTile8 = new MetroFramework.Controls.MetroTile();
-            this.metroTile9 = new MetroFramework.Controls.MetroTile();
-            this.metroTile10 = new MetroFramework.Controls.MetroTile();
+            this.btn8 = new MetroFramework.Controls.MetroTile();
+            this.btn7 = new MetroFramework.Controls.MetroTile();
+            this.btn9 = new MetroFramework.Controls.MetroTile();
+            this.btnConfirm = new MetroFramework.Controls.MetroTile();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
+            this.lblNoTrans = new MetroFramework.Controls.MetroLabel();
+            this.lblDateTime = new MetroFramework.Controls.MetroLabel();
             this.gridSummary = new MetroFramework.Controls.MetroGrid();
             this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
-            this.metroTile11 = new MetroFramework.Controls.MetroTile();
-            this.metroTile12 = new MetroFramework.Controls.MetroTile();
-            this.metroTile13 = new MetroFramework.Controls.MetroTile();
-            this.metroTile14 = new MetroFramework.Controls.MetroTile();
-            this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel11 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel12 = new MetroFramework.Controls.MetroLabel();
+            this.btnCancel = new MetroFramework.Controls.MetroTile();
+            this.btn0 = new MetroFramework.Controls.MetroTile();
+            this.btnDecimal = new MetroFramework.Controls.MetroTile();
+            this.btnClear = new MetroFramework.Controls.MetroTile();
+            this.lblGrandTotal = new MetroFramework.Controls.MetroLabel();
+            this.lblCash = new MetroFramework.Controls.MetroLabel();
+            this.lblChange = new MetroFramework.Controls.MetroLabel();
             this.metroLabel13 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel14 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel15 = new MetroFramework.Controls.MetroLabel();
+            this.lblCurrentPoints = new MetroFramework.Controls.MetroLabel();
+            this.lblPoints = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.gridSummary)).BeginInit();
             this.SuspendLayout();
             // 
@@ -166,50 +166,50 @@
             this.btn6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn6.UseSelectable = true;
             // 
-            // metroTile7
+            // btn8
             // 
-            this.metroTile7.ActiveControl = null;
-            this.metroTile7.Location = new System.Drawing.Point(357, 369);
-            this.metroTile7.Name = "metroTile7";
-            this.metroTile7.Size = new System.Drawing.Size(50, 50);
-            this.metroTile7.TabIndex = 11;
-            this.metroTile7.Text = "8";
-            this.metroTile7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile7.UseSelectable = true;
+            this.btn8.ActiveControl = null;
+            this.btn8.Location = new System.Drawing.Point(357, 369);
+            this.btn8.Name = "btn8";
+            this.btn8.Size = new System.Drawing.Size(50, 50);
+            this.btn8.TabIndex = 11;
+            this.btn8.Text = "8";
+            this.btn8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn8.UseSelectable = true;
             // 
-            // metroTile8
+            // btn7
             // 
-            this.metroTile8.ActiveControl = null;
-            this.metroTile8.Location = new System.Drawing.Point(306, 369);
-            this.metroTile8.Name = "metroTile8";
-            this.metroTile8.Size = new System.Drawing.Size(50, 50);
-            this.metroTile8.TabIndex = 12;
-            this.metroTile8.Text = "7";
-            this.metroTile8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile8.UseSelectable = true;
+            this.btn7.ActiveControl = null;
+            this.btn7.Location = new System.Drawing.Point(306, 369);
+            this.btn7.Name = "btn7";
+            this.btn7.Size = new System.Drawing.Size(50, 50);
+            this.btn7.TabIndex = 12;
+            this.btn7.Text = "7";
+            this.btn7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn7.UseSelectable = true;
             // 
-            // metroTile9
+            // btn9
             // 
-            this.metroTile9.ActiveControl = null;
-            this.metroTile9.Location = new System.Drawing.Point(408, 369);
-            this.metroTile9.Name = "metroTile9";
-            this.metroTile9.Size = new System.Drawing.Size(50, 50);
-            this.metroTile9.TabIndex = 13;
-            this.metroTile9.Text = "9";
-            this.metroTile9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile9.UseSelectable = true;
+            this.btn9.ActiveControl = null;
+            this.btn9.Location = new System.Drawing.Point(408, 369);
+            this.btn9.Name = "btn9";
+            this.btn9.Size = new System.Drawing.Size(50, 50);
+            this.btn9.TabIndex = 13;
+            this.btn9.Text = "9";
+            this.btn9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn9.UseSelectable = true;
             // 
-            // metroTile10
+            // btnConfirm
             // 
-            this.metroTile10.ActiveControl = null;
-            this.metroTile10.Location = new System.Drawing.Point(306, 476);
-            this.metroTile10.Name = "metroTile10";
-            this.metroTile10.Size = new System.Drawing.Size(152, 40);
-            this.metroTile10.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTile10.TabIndex = 14;
-            this.metroTile10.Text = "Confirm";
-            this.metroTile10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile10.UseSelectable = true;
+            this.btnConfirm.ActiveControl = null;
+            this.btnConfirm.Location = new System.Drawing.Point(306, 476);
+            this.btnConfirm.Name = "btnConfirm";
+            this.btnConfirm.Size = new System.Drawing.Size(152, 40);
+            this.btnConfirm.Style = MetroFramework.MetroColorStyle.Green;
+            this.btnConfirm.TabIndex = 14;
+            this.btnConfirm.Text = "Confirm";
+            this.btnConfirm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnConfirm.UseSelectable = true;
             // 
             // metroLabel5
             // 
@@ -220,23 +220,23 @@
             this.metroLabel5.TabIndex = 15;
             this.metroLabel5.Text = "Transaction No : ";
             // 
-            // metroLabel6
+            // lblNoTrans
             // 
-            this.metroLabel6.AutoSize = true;
-            this.metroLabel6.Location = new System.Drawing.Point(118, 77);
-            this.metroLabel6.Name = "metroLabel6";
-            this.metroLabel6.Size = new System.Drawing.Size(83, 19);
-            this.metroLabel6.TabIndex = 16;
-            this.metroLabel6.Text = "metroLabel6";
+            this.lblNoTrans.AutoSize = true;
+            this.lblNoTrans.Location = new System.Drawing.Point(118, 77);
+            this.lblNoTrans.Name = "lblNoTrans";
+            this.lblNoTrans.Size = new System.Drawing.Size(83, 19);
+            this.lblNoTrans.TabIndex = 16;
+            this.lblNoTrans.Text = "metroLabel6";
             // 
-            // metroLabel7
+            // lblDateTime
             // 
-            this.metroLabel7.AutoSize = true;
-            this.metroLabel7.Location = new System.Drawing.Point(320, 76);
-            this.metroLabel7.Name = "metroLabel7";
-            this.metroLabel7.Size = new System.Drawing.Size(83, 19);
-            this.metroLabel7.TabIndex = 17;
-            this.metroLabel7.Text = "metroLabel7";
+            this.lblDateTime.AutoSize = true;
+            this.lblDateTime.Location = new System.Drawing.Point(320, 76);
+            this.lblDateTime.Name = "lblDateTime";
+            this.lblDateTime.Size = new System.Drawing.Size(83, 19);
+            this.lblDateTime.TabIndex = 17;
+            this.lblDateTime.Text = "metroLabel7";
             // 
             // gridSummary
             // 
@@ -302,132 +302,132 @@
             this.metroLabel9.TabIndex = 20;
             this.metroLabel9.Text = "Points :";
             // 
-            // metroTile11
+            // btnCancel
             // 
-            this.metroTile11.ActiveControl = null;
-            this.metroTile11.Location = new System.Drawing.Point(11, 476);
-            this.metroTile11.Name = "metroTile11";
-            this.metroTile11.Size = new System.Drawing.Size(122, 36);
-            this.metroTile11.Style = MetroFramework.MetroColorStyle.Red;
-            this.metroTile11.TabIndex = 21;
-            this.metroTile11.Text = "Cancel";
-            this.metroTile11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.metroTile11.UseSelectable = true;
+            this.btnCancel.ActiveControl = null;
+            this.btnCancel.Location = new System.Drawing.Point(11, 476);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(122, 36);
+            this.btnCancel.Style = MetroFramework.MetroColorStyle.Red;
+            this.btnCancel.TabIndex = 21;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnCancel.UseSelectable = true;
             // 
-            // metroTile12
+            // btn0
             // 
-            this.metroTile12.ActiveControl = null;
-            this.metroTile12.Location = new System.Drawing.Point(306, 420);
-            this.metroTile12.Name = "metroTile12";
-            this.metroTile12.Size = new System.Drawing.Size(50, 50);
-            this.metroTile12.TabIndex = 22;
-            this.metroTile12.Text = "0";
-            this.metroTile12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile12.UseSelectable = true;
+            this.btn0.ActiveControl = null;
+            this.btn0.Location = new System.Drawing.Point(306, 420);
+            this.btn0.Name = "btn0";
+            this.btn0.Size = new System.Drawing.Size(50, 50);
+            this.btn0.TabIndex = 22;
+            this.btn0.Text = "0";
+            this.btn0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn0.UseSelectable = true;
             // 
-            // metroTile13
+            // btnDecimal
             // 
-            this.metroTile13.ActiveControl = null;
-            this.metroTile13.Location = new System.Drawing.Point(357, 420);
-            this.metroTile13.Name = "metroTile13";
-            this.metroTile13.Size = new System.Drawing.Size(50, 50);
-            this.metroTile13.Style = MetroFramework.MetroColorStyle.Silver;
-            this.metroTile13.TabIndex = 23;
-            this.metroTile13.Text = ".";
-            this.metroTile13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile13.UseSelectable = true;
+            this.btnDecimal.ActiveControl = null;
+            this.btnDecimal.Location = new System.Drawing.Point(357, 420);
+            this.btnDecimal.Name = "btnDecimal";
+            this.btnDecimal.Size = new System.Drawing.Size(50, 50);
+            this.btnDecimal.Style = MetroFramework.MetroColorStyle.Silver;
+            this.btnDecimal.TabIndex = 23;
+            this.btnDecimal.Text = ".";
+            this.btnDecimal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnDecimal.UseSelectable = true;
             // 
-            // metroTile14
+            // btnClear
             // 
-            this.metroTile14.ActiveControl = null;
-            this.metroTile14.Location = new System.Drawing.Point(408, 420);
-            this.metroTile14.Name = "metroTile14";
-            this.metroTile14.Size = new System.Drawing.Size(50, 50);
-            this.metroTile14.Style = MetroFramework.MetroColorStyle.Orange;
-            this.metroTile14.TabIndex = 24;
-            this.metroTile14.Text = "CE";
-            this.metroTile14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile14.UseSelectable = true;
+            this.btnClear.ActiveControl = null;
+            this.btnClear.Location = new System.Drawing.Point(408, 420);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(50, 50);
+            this.btnClear.Style = MetroFramework.MetroColorStyle.Orange;
+            this.btnClear.TabIndex = 24;
+            this.btnClear.Text = "CE";
+            this.btnClear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnClear.UseSelectable = true;
             // 
-            // metroLabel10
+            // lblGrandTotal
             // 
-            this.metroLabel10.AutoSize = true;
-            this.metroLabel10.Location = new System.Drawing.Point(124, 283);
-            this.metroLabel10.Name = "metroLabel10";
-            this.metroLabel10.Size = new System.Drawing.Size(88, 19);
-            this.metroLabel10.TabIndex = 25;
-            this.metroLabel10.Text = "metroLabel10";
+            this.lblGrandTotal.AutoSize = true;
+            this.lblGrandTotal.Location = new System.Drawing.Point(124, 283);
+            this.lblGrandTotal.Name = "lblGrandTotal";
+            this.lblGrandTotal.Size = new System.Drawing.Size(88, 19);
+            this.lblGrandTotal.TabIndex = 25;
+            this.lblGrandTotal.Text = "metroLabel10";
             // 
-            // metroLabel11
+            // lblCash
             // 
-            this.metroLabel11.AutoSize = true;
-            this.metroLabel11.Location = new System.Drawing.Point(126, 302);
-            this.metroLabel11.Name = "metroLabel11";
-            this.metroLabel11.Size = new System.Drawing.Size(86, 19);
-            this.metroLabel11.TabIndex = 26;
-            this.metroLabel11.Text = "metroLabel11";
+            this.lblCash.AutoSize = true;
+            this.lblCash.Location = new System.Drawing.Point(126, 302);
+            this.lblCash.Name = "lblCash";
+            this.lblCash.Size = new System.Drawing.Size(86, 19);
+            this.lblCash.TabIndex = 26;
+            this.lblCash.Text = "metroLabel11";
             // 
-            // metroLabel12
+            // lblChange
             // 
-            this.metroLabel12.AutoSize = true;
-            this.metroLabel12.Location = new System.Drawing.Point(126, 322);
-            this.metroLabel12.Name = "metroLabel12";
-            this.metroLabel12.Size = new System.Drawing.Size(88, 19);
-            this.metroLabel12.TabIndex = 27;
-            this.metroLabel12.Text = "metroLabel12";
+            this.lblChange.AutoSize = true;
+            this.lblChange.Location = new System.Drawing.Point(120, 322);
+            this.lblChange.Name = "lblChange";
+            this.lblChange.Size = new System.Drawing.Size(88, 19);
+            this.lblChange.TabIndex = 27;
+            this.lblChange.Text = "metroLabel12";
             // 
             // metroLabel13
             // 
             this.metroLabel13.AutoSize = true;
-            this.metroLabel13.Location = new System.Drawing.Point(125, 341);
+            this.metroLabel13.Location = new System.Drawing.Point(120, 360);
             this.metroLabel13.Name = "metroLabel13";
             this.metroLabel13.Size = new System.Drawing.Size(88, 19);
             this.metroLabel13.TabIndex = 28;
             this.metroLabel13.Text = "metroLabel13";
             // 
-            // metroLabel14
+            // lblCurrentPoints
             // 
-            this.metroLabel14.AutoSize = true;
-            this.metroLabel14.Location = new System.Drawing.Point(126, 369);
-            this.metroLabel14.Name = "metroLabel14";
-            this.metroLabel14.Size = new System.Drawing.Size(88, 19);
-            this.metroLabel14.TabIndex = 29;
-            this.metroLabel14.Text = "metroLabel14";
+            this.lblCurrentPoints.AutoSize = true;
+            this.lblCurrentPoints.Location = new System.Drawing.Point(120, 388);
+            this.lblCurrentPoints.Name = "lblCurrentPoints";
+            this.lblCurrentPoints.Size = new System.Drawing.Size(88, 19);
+            this.lblCurrentPoints.TabIndex = 29;
+            this.lblCurrentPoints.Text = "metroLabel14";
             // 
-            // metroLabel15
+            // lblPoints
             // 
-            this.metroLabel15.AutoSize = true;
-            this.metroLabel15.Location = new System.Drawing.Point(126, 388);
-            this.metroLabel15.Name = "metroLabel15";
-            this.metroLabel15.Size = new System.Drawing.Size(88, 19);
-            this.metroLabel15.TabIndex = 30;
-            this.metroLabel15.Text = "metroLabel15";
+            this.lblPoints.AutoSize = true;
+            this.lblPoints.Location = new System.Drawing.Point(120, 420);
+            this.lblPoints.Name = "lblPoints";
+            this.lblPoints.Size = new System.Drawing.Size(88, 19);
+            this.lblPoints.TabIndex = 30;
+            this.lblPoints.Text = "metroLabel15";
             // 
             // POSPayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(482, 529);
-            this.Controls.Add(this.metroLabel15);
-            this.Controls.Add(this.metroLabel14);
+            this.Controls.Add(this.lblPoints);
+            this.Controls.Add(this.lblCurrentPoints);
             this.Controls.Add(this.metroLabel13);
-            this.Controls.Add(this.metroLabel12);
-            this.Controls.Add(this.metroLabel11);
-            this.Controls.Add(this.metroLabel10);
-            this.Controls.Add(this.metroTile14);
-            this.Controls.Add(this.metroTile13);
-            this.Controls.Add(this.metroTile12);
-            this.Controls.Add(this.metroTile11);
+            this.Controls.Add(this.lblChange);
+            this.Controls.Add(this.lblCash);
+            this.Controls.Add(this.lblGrandTotal);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.btnDecimal);
+            this.Controls.Add(this.btn0);
+            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.metroLabel9);
             this.Controls.Add(this.metroLabel8);
             this.Controls.Add(this.gridSummary);
-            this.Controls.Add(this.metroLabel7);
-            this.Controls.Add(this.metroLabel6);
+            this.Controls.Add(this.lblDateTime);
+            this.Controls.Add(this.lblNoTrans);
             this.Controls.Add(this.metroLabel5);
-            this.Controls.Add(this.metroTile10);
-            this.Controls.Add(this.metroTile9);
-            this.Controls.Add(this.metroTile8);
-            this.Controls.Add(this.metroTile7);
+            this.Controls.Add(this.btnConfirm);
+            this.Controls.Add(this.btn9);
+            this.Controls.Add(this.btn7);
+            this.Controls.Add(this.btn8);
             this.Controls.Add(this.btn6);
             this.Controls.Add(this.btn5);
             this.Controls.Add(this.btn4);
@@ -458,25 +458,25 @@
         private MetroFramework.Controls.MetroTile btn4;
         private MetroFramework.Controls.MetroTile btn5;
         private MetroFramework.Controls.MetroTile btn6;
-        private MetroFramework.Controls.MetroTile metroTile7;
-        private MetroFramework.Controls.MetroTile metroTile8;
-        private MetroFramework.Controls.MetroTile metroTile9;
-        private MetroFramework.Controls.MetroTile metroTile10;
+        private MetroFramework.Controls.MetroTile btn8;
+        private MetroFramework.Controls.MetroTile btn7;
+        private MetroFramework.Controls.MetroTile btn9;
+        private MetroFramework.Controls.MetroTile btnConfirm;
         private MetroFramework.Controls.MetroLabel metroLabel5;
-        private MetroFramework.Controls.MetroLabel metroLabel6;
-        private MetroFramework.Controls.MetroLabel metroLabel7;
+        private MetroFramework.Controls.MetroLabel lblNoTrans;
+        private MetroFramework.Controls.MetroLabel lblDateTime;
         private MetroFramework.Controls.MetroGrid gridSummary;
         private MetroFramework.Controls.MetroLabel metroLabel8;
         private MetroFramework.Controls.MetroLabel metroLabel9;
-        private MetroFramework.Controls.MetroTile metroTile11;
-        private MetroFramework.Controls.MetroTile metroTile12;
-        private MetroFramework.Controls.MetroTile metroTile13;
-        private MetroFramework.Controls.MetroTile metroTile14;
-        private MetroFramework.Controls.MetroLabel metroLabel10;
-        private MetroFramework.Controls.MetroLabel metroLabel11;
-        private MetroFramework.Controls.MetroLabel metroLabel12;
+        private MetroFramework.Controls.MetroTile btnCancel;
+        private MetroFramework.Controls.MetroTile btn0;
+        private MetroFramework.Controls.MetroTile btnDecimal;
+        private MetroFramework.Controls.MetroTile btnClear;
+        private MetroFramework.Controls.MetroLabel lblGrandTotal;
+        private MetroFramework.Controls.MetroLabel lblCash;
+        private MetroFramework.Controls.MetroLabel lblChange;
         private MetroFramework.Controls.MetroLabel metroLabel13;
-        private MetroFramework.Controls.MetroLabel metroLabel14;
-        private MetroFramework.Controls.MetroLabel metroLabel15;
+        private MetroFramework.Controls.MetroLabel lblCurrentPoints;
+        private MetroFramework.Controls.MetroLabel lblPoints;
     }
 }
