@@ -26,7 +26,6 @@ E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\bin\Debug\MetroF
 E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\bin\Debug\MetroFramework.Fonts.dll
 E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\bin\Debug\Oracle.DataAccess.dll
 E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\obj\Debug\Proyek.csprojResolveAssemblyReference.cache
-E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\obj\Debug\Proyek.Form1.resources
 E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\obj\Debug\Proyek.Inventory.resources
 E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\obj\Debug\Proyek.Login.resources
 E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\obj\Debug\Proyek.Master.resources

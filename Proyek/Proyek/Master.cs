@@ -47,7 +47,7 @@ namespace Proyek
             DataSet ds1 = new DataSet();
             OracleDataAdapter da1 = new OracleDataAdapter(q1, f.conn);
             da1.Fill(ds1);
-            gridMember.DataSource = ds1.Tables[0];
+            btnSimpanMember.DataSource = ds1.Tables[0];
         }
 
         public void initSupplier()
