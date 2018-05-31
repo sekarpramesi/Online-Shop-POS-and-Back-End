@@ -242,6 +242,7 @@ create table MEMBER
    NAMA_MEMBER          VARCHAR2(30)         not null,
    TGL_LAHIR_MEMBER     VARCHAR2(30)         not null,
    JK_MEMBER            NUMBER               not null,
+   EMAIL_MEMBER         VARCHAR2(30 BYTE)    not null,
    ALAMAT_MEMBER        VARCHAR2(30)         not null,
    FOTO_MEMBER          VARCHAR2(50 CHAR),
    PASSWORD_MEMBER      VARCHAR2(30)         not null,
@@ -442,11 +443,11 @@ INSERT INTO SUPPLIER VALUES ('S0003','PT.Sentosa Abadi','Jl.Kalidami 20',2345553
 INSERT INTO SUPPLIER VALUES ('S0004','PT.Elektronika Jaya','Jl.Basuki Rahmat 35',1234444);
 INSERT INTO SUPPLIER VALUES ('S0005','PT.Sumber Abadi','Jl.Pandegiling 40',5678888);
 
-INSERT INTO MEMBER VALUES ('M0001','Roy Kiyoshi',TO_DATE('1989-10-10','YYYY-MM-DD'),1,'Jl.Senayan Timur 90',NULL,'mrk001');
-INSERT INTO MEMBER VALUES ('M0002','Bob Martin',TO_DATE('1965-10-12','YYYY-MM-DD'),1,'Jl.Meruya Barat 88',NULL,'mbr002');
-INSERT INTO MEMBER VALUES ('M0003','Dian Sastro',TO_DATE('1988-05-05','YYYY-MM-DD'),0,'Jl.Kemang Timur 80',NULL,'mds003');
-INSERT INTO MEMBER VALUES ('M0004','Tara Basro',TO_DATE('1990-04-03','YYYY-MM-DD'),0,'Jl.Darmo 90',NULL,'mtb004');
-INSERT INTO MEMBER VALUES ('M0005','Richo Kyle',TO_DATE('1989-03-04','YYYY-MM-DD'),1,'Jl.Dinoyo 88',NULL,'mrk005');
+INSERT INTO MEMBER VALUES ('M0001','Roy Kiyoshi',TO_DATE('1989-10-10','YYYY-MM-DD'),1,'roy@mail.com','Jl.Senayan Timur 90',NULL,'mrk001');
+INSERT INTO MEMBER VALUES ('M0002','Bob Martin',TO_DATE('1965-10-12','YYYY-MM-DD'),1,'bobm@mail.com','Jl.Meruya Barat 88',NULL,'mbr002');
+INSERT INTO MEMBER VALUES ('M0003','Dian Sastro',TO_DATE('1988-05-05','YYYY-MM-DD'),0,'disastr@mail.com','Jl.Kemang Timur 80',NULL,'mds003');
+INSERT INTO MEMBER VALUES ('M0004','Tara Basro',TO_DATE('1990-04-03','YYYY-MM-DD'),0,'tarabasro@mail.com','Jl.Darmo 90',NULL,'mtb004');
+INSERT INTO MEMBER VALUES ('M0005','Richo Kyle',TO_DATE('1989-03-04','YYYY-MM-DD'),1,'richok@mail.com','Jl.Dinoyo 88',NULL,'mrk005');
 
 INSERT INTO HBELI VALUES ('HB13032018001',TO_DATE('2018-03-13 10:30:44','YYYY-MM-DD HH24:MI:SS'),200000000);
 INSERT INTO HBELI VALUES ('HB13032018002',TO_DATE('2018-03-13 10:35:44','YYYY-MM-DD HH24:MI:SS'),30000000);
