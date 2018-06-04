@@ -441,6 +441,7 @@
             this.Controls.Add(this.metroLabel1);
             this.Name = "POSPayment";
             this.Text = "Payment Summary";
+            this.Load += new System.EventHandler(this.POSPayment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridSummary)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -1,0 +1,17 @@
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\bin\x64\Debug\Proyek.exe.config
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\bin\x64\Debug\Proyek.exe
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\bin\x64\Debug\Proyek.pdb
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\bin\x64\Debug\MetroFramework.Design.dll
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\bin\x64\Debug\MetroFramework.dll
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\bin\x64\Debug\MetroFramework.Fonts.dll
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\obj\x64\Debug\Proyek.csprojResolveAssemblyReference.cache
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\obj\x64\Debug\Proyek.Inventory.resources
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\obj\x64\Debug\Proyek.Login.resources
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\obj\x64\Debug\Proyek.Master.resources
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\obj\x64\Debug\Proyek.Menu.resources
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\obj\x64\Debug\Proyek.POS.resources
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\obj\x64\Debug\Proyek.POSPayment.resources
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\obj\x64\Debug\Proyek.Properties.Resources.resources
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\obj\x64\Debug\Proyek.csproj.GenerateResource.Cache
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\obj\x64\Debug\Proyek.exe
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\obj\x64\Debug\Proyek.pdb

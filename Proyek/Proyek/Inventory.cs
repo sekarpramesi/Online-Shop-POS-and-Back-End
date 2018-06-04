@@ -23,6 +23,17 @@ namespace Proyek
         public void init(Login f1)
         {
             f = f1;
+            setgridBarang();
+        }
+        DataSet dsBarang = new DataSet();
+        OracleDataAdapter daBarang = new OracleDataAdapter();
+
+        public void setgridBarang()
+        {
+            String q1 = "select * from barang";
+            daBarang = new OracleDataAdapter(q1, f.conn);
+            daBarang.Fill(dsBarang);
+            gridBarang.DataSource = dsBarang.Tables[0];
         }
     }
 }

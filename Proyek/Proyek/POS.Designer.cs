@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -74,6 +75,8 @@
             this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
             this.txtSearch = new MetroFramework.Controls.MetroTextBox();
             this.tabMember = new MetroFramework.Controls.MetroTabPage();
+            this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
+            this.txtEmail = new MetroFramework.Controls.MetroTextBox();
             this.txtJumlahPoint = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel23 = new MetroFramework.Controls.MetroLabel();
             this.btnUpload = new MetroFramework.Controls.MetroTile();
@@ -101,8 +104,8 @@
             this.lblDateTime = new MetroFramework.Controls.MetroLabel();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.lblCashierName = new MetroFramework.Controls.MetroLabel();
-            this.txtEmail = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabMenuPos.SuspendLayout();
             this.tabTransaction.SuspendLayout();
             this.panelProductInfo.SuspendLayout();
@@ -110,6 +113,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridProductList)).BeginInit();
             this.tabMember.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbFotoMember)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabMenuPos
@@ -118,7 +122,7 @@
             this.tabMenuPos.Controls.Add(this.tabMember);
             this.tabMenuPos.Location = new System.Drawing.Point(-1, 46);
             this.tabMenuPos.Name = "tabMenuPos";
-            this.tabMenuPos.SelectedIndex = 1;
+            this.tabMenuPos.SelectedIndex = 0;
             this.tabMenuPos.Size = new System.Drawing.Size(908, 537);
             this.tabMenuPos.TabIndex = 0;
             this.tabMenuPos.UseSelectable = true;
@@ -205,6 +209,7 @@
             this.btnClearAll.Text = "Clear All";
             this.btnClearAll.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnClearAll.UseSelectable = true;
+            this.btnClearAll.Click += new System.EventHandler(this.btnClearAll_Click);
             // 
             // btnNext
             // 
@@ -217,10 +222,12 @@
             this.btnNext.Text = "Next";
             this.btnNext.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnNext.UseSelectable = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // panelProductInfo
             // 
             this.panelProductInfo.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelProductInfo.Controls.Add(this.pictureBox1);
             this.panelProductInfo.Controls.Add(this.lblStock);
             this.panelProductInfo.Controls.Add(this.lblCategory);
             this.panelProductInfo.Controls.Add(this.lblPrice);
@@ -415,6 +422,7 @@
             this.gridDTrans.Size = new System.Drawing.Size(526, 312);
             this.gridDTrans.TabIndex = 17;
             this.gridDTrans.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.gridDTrans.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridDTrans_CellContentClick);
             // 
             // dId
             // 
@@ -507,6 +515,8 @@
             this.gridProductList.Size = new System.Drawing.Size(342, 427);
             this.gridProductList.TabIndex = 16;
             this.gridProductList.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.gridProductList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridProductList_CellClick);
+            this.gridProductList.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridProductList_CellDoubleClick);
             // 
             // Picture
             // 
@@ -638,6 +648,45 @@
             this.tabMember.VerticalScrollbarHighlightOnWheel = false;
             this.tabMember.VerticalScrollbarSize = 10;
             this.tabMember.Click += new System.EventHandler(this.metroTabPage3_Click);
+            // 
+            // metroLabel10
+            // 
+            this.metroLabel10.AutoSize = true;
+            this.metroLabel10.Location = new System.Drawing.Point(427, 235);
+            this.metroLabel10.Name = "metroLabel10";
+            this.metroLabel10.Size = new System.Drawing.Size(41, 19);
+            this.metroLabel10.TabIndex = 29;
+            this.metroLabel10.Text = "Email";
+            // 
+            // txtEmail
+            // 
+            // 
+            // 
+            // 
+            this.txtEmail.CustomButton.Image = null;
+            this.txtEmail.CustomButton.Location = new System.Drawing.Point(185, 1);
+            this.txtEmail.CustomButton.Name = "";
+            this.txtEmail.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtEmail.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtEmail.CustomButton.TabIndex = 1;
+            this.txtEmail.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtEmail.CustomButton.UseSelectable = true;
+            this.txtEmail.CustomButton.Visible = false;
+            this.txtEmail.Lines = new string[0];
+            this.txtEmail.Location = new System.Drawing.Point(479, 234);
+            this.txtEmail.MaxLength = 32767;
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.PasswordChar = '\0';
+            this.txtEmail.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtEmail.SelectedText = "";
+            this.txtEmail.SelectionLength = 0;
+            this.txtEmail.SelectionStart = 0;
+            this.txtEmail.ShortcutsEnabled = true;
+            this.txtEmail.Size = new System.Drawing.Size(207, 23);
+            this.txtEmail.TabIndex = 28;
+            this.txtEmail.UseSelectable = true;
+            this.txtEmail.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtEmail.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // txtJumlahPoint
             // 
@@ -997,44 +1046,20 @@
             this.lblCashierName.TabIndex = 6;
             this.lblCashierName.Text = "metroLabel6";
             // 
-            // txtEmail
+            // imageList1
             // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
+            // pictureBox1
             // 
-            // 
-            this.txtEmail.CustomButton.Image = null;
-            this.txtEmail.CustomButton.Location = new System.Drawing.Point(185, 1);
-            this.txtEmail.CustomButton.Name = "";
-            this.txtEmail.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txtEmail.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtEmail.CustomButton.TabIndex = 1;
-            this.txtEmail.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtEmail.CustomButton.UseSelectable = true;
-            this.txtEmail.CustomButton.Visible = false;
-            this.txtEmail.Lines = new string[0];
-            this.txtEmail.Location = new System.Drawing.Point(479, 234);
-            this.txtEmail.MaxLength = 32767;
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.PasswordChar = '\0';
-            this.txtEmail.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtEmail.SelectedText = "";
-            this.txtEmail.SelectionLength = 0;
-            this.txtEmail.SelectionStart = 0;
-            this.txtEmail.ShortcutsEnabled = true;
-            this.txtEmail.Size = new System.Drawing.Size(207, 23);
-            this.txtEmail.TabIndex = 28;
-            this.txtEmail.UseSelectable = true;
-            this.txtEmail.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtEmail.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroLabel10
-            // 
-            this.metroLabel10.AutoSize = true;
-            this.metroLabel10.Location = new System.Drawing.Point(427, 235);
-            this.metroLabel10.Name = "metroLabel10";
-            this.metroLabel10.Size = new System.Drawing.Size(41, 19);
-            this.metroLabel10.TabIndex = 29;
-            this.metroLabel10.Text = "Email";
+            this.pictureBox1.Location = new System.Drawing.Point(260, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(127, 129);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
             // 
             // POS
             // 
@@ -1060,6 +1085,7 @@
             this.tabMember.ResumeLayout(false);
             this.tabMember.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbFotoMember)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1136,6 +1162,8 @@
         private MetroFramework.Controls.MetroLabel metroLabel23;
         private MetroFramework.Controls.MetroLabel metroLabel10;
         private MetroFramework.Controls.MetroTextBox txtEmail;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.PictureBox pictureBox1;
 
     }
 }

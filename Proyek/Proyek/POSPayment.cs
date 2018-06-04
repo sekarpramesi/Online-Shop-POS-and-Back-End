@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MetroFramework.Forms;
+using Oracle.DataAccess.Client;
 
 namespace Proyek
 {
@@ -16,6 +17,16 @@ namespace Proyek
         public POSPayment()
         {
             InitializeComponent();
+        }
+        public Login f;
+
+        public void init(Login f1)
+        {
+            f = f1;
+        }
+        private void POSPayment_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -34,3 +34,21 @@ E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\obj\Debug\Proyek
 E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\obj\Debug\Proyek.Properties.Resources.resources
 E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\obj\Debug\Proyek.csproj.GenerateResource.Cache
 E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\obj\Debug\Proyek.POSPayment.resources
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\bin\Debug\Proyek.exe.config
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\bin\Debug\Proyek.exe
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\bin\Debug\Proyek.pdb
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\bin\Debug\MetroFramework.Design.dll
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\bin\Debug\MetroFramework.dll
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\bin\Debug\MetroFramework.Fonts.dll
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\bin\Debug\Oracle.DataAccess.dll
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\obj\Debug\Proyek.csprojResolveAssemblyReference.cache
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\obj\Debug\Proyek.Inventory.resources
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\obj\Debug\Proyek.Login.resources
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\obj\Debug\Proyek.Master.resources
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\obj\Debug\Proyek.Menu.resources
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\obj\Debug\Proyek.POS.resources
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\obj\Debug\Proyek.POSPayment.resources
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\obj\Debug\Proyek.Properties.Resources.resources
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\obj\Debug\Proyek.csproj.GenerateResource.Cache
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\obj\Debug\Proyek.exe
+E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\obj\Debug\Proyek.pdb
