@@ -15,3 +15,20 @@ E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\obj\x64\Debug\Pr
 E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\obj\x64\Debug\Proyek.csproj.GenerateResource.Cache
 E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\obj\x64\Debug\Proyek.exe
 E:\PCS\Proyek\Online-Shop-POS-and-Back-End-master\Proyek\Proyek\obj\x64\Debug\Proyek.pdb
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\bin\x64\Debug\Proyek.exe.config
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\obj\x64\Debug\Proyek.exe
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\obj\x64\Debug\Proyek.pdb
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\bin\x64\Debug\Proyek.exe
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\bin\x64\Debug\Proyek.pdb
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\bin\x64\Debug\MetroFramework.Design.dll
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\bin\x64\Debug\MetroFramework.dll
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\bin\x64\Debug\MetroFramework.Fonts.dll
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\obj\x64\Debug\Proyek.csprojResolveAssemblyReference.cache
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\obj\x64\Debug\Proyek.Inventory.resources
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\obj\x64\Debug\Proyek.Login.resources
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\obj\x64\Debug\Proyek.Master.resources
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\obj\x64\Debug\Proyek.Menu.resources
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\obj\x64\Debug\Proyek.POS.resources
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\obj\x64\Debug\Proyek.POSPayment.resources
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\obj\x64\Debug\Proyek.Properties.Resources.resources
+E:\Documents\Academics\STTS\Semester 6\PCS\Proyek\Proyek\Proyek\obj\x64\Debug\Proyek.csproj.GenerateResource.Cache
