@@ -11,5 +11,13 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+mix.react('resources/assets/js/app.js', 'public/js','public/js/vendor')
+   .sass('resources/assets/sass/app.scss', 'public/css')
+   .styles([
+    'resources/assets/css/vendor/font-awesome.min.css',
+    'resources/assets/css/vendor/nouislider.min.css',
+    'resources/assets/css/vendor/bootstrap.min.css',
+    'resources/assets/css/vendor/slick-theme.css',
+    'resources/assets/css/vendor/slick.css',
+    'resources/assets/css/vendor/style.css',
+], 'public/css/all.css');

@@ -37,6 +37,8 @@ namespace Proyek
         OracleDataAdapter daPegawai = new OracleDataAdapter();
         DataSet dsPoint = new DataSet();
         OracleDataAdapter daPoint = new OracleDataAdapter();
+        DataSet dsAbsensi = new DataSet();
+        OracleDataAdapter daAbsensi = new OracleDataAdapter();
         OracleCommandBuilder cmdBuilder = new OracleCommandBuilder();
 
         public void initPegawai()
@@ -53,10 +55,6 @@ namespace Proyek
             daMember = new OracleDataAdapter(q1, f.conn);
             daMember.Fill(dsMember);
             btnSimpanMember.DataSource = dsMember.Tables[0];
-            String q2 = "select p.id_member,m.nama_member,p.point from point_history p,member m where p.id_member = m.id_member";
-            daPoint = new OracleDataAdapter(q2, f.conn);
-            daPoint.Fill(dsPoint);
-            gridPointHistory.DataSource = dsPoint.Tables[0];
         }
 
         public void initSupplier()
@@ -84,6 +82,8 @@ namespace Proyek
             this.Validate();
             cmdBuilder = new OracleCommandBuilder(daPegawai);
             daPegawai.Update(dsPegawai);
+            cmdBuilder = new OracleCommandBuilder(daAbsensi);
+            daAbsensi.Update(dsAbsensi);
         }
 
         private void metroTile2_Click(object sender, EventArgs e)
@@ -91,6 +91,28 @@ namespace Proyek
             this.Validate();
             cmdBuilder = new OracleCommandBuilder(daMember);
             daMember.Update(dsMember);
+        }
+
+        private void btnSimpanMember_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int index = e.RowIndex;
+            String id_member = btnSimpanMember.Rows[index].Cells[0].Value.ToString();
+            String q2 = "select h.id_hjual,h.tanggal_hjual,p.point from point_history p,hjual h where h.id_hjual = p.id_hjual and p.id_member = '"+id_member+"'";
+            daPoint = new OracleDataAdapter(q2, f.conn);
+            dsPoint = new DataSet();
+            daPoint.Fill(dsPoint);
+            gridPointHistory.DataSource = dsPoint.Tables[0];
+        }
+
+        private void gridPegawai_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int index = e.RowIndex;
+            String id_pegawai = gridPegawai.Rows[index].Cells[0].Value.ToString();
+            String q1 = "select * from absensi where id_pegawai = '" + id_pegawai + "'";
+            daAbsensi = new OracleDataAdapter(q1, f.conn);
+            dsAbsensi = new DataSet();
+            daAbsensi.Fill(dsAbsensi);
+            gridAbsensi.DataSource = dsAbsensi.Tables[0];
         }
         
     }
