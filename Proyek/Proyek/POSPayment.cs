@@ -58,7 +58,7 @@ namespace Proyek
         }
         private void setcbbMember()
         {
-            String q1 = "select * from member";
+            String q1 = "select * from niya.member";
             daMember = new OracleDataAdapter(q1, f.conn);
             daMember.Fill(dsMember);
             for (int i = 0; i < dsMember.Tables[0].Rows.Count; i++)
@@ -76,7 +76,7 @@ namespace Proyek
 
         private void cbbMember_SelectedIndexChanged(object sender, EventArgs e)
         {
-            String q1 = "select point from point_history where id_member ='" + cbbMember.Text + "'";
+            String q1 = "select point from niya.point_history where id_member ='" + cbbMember.Text + "'";
             OracleCommand cmd = new OracleCommand(q1, f.conn);
             lblCurrentPoints.Text = cmd.ExecuteScalar().ToString();
         }
@@ -225,7 +225,7 @@ namespace Proyek
 
         private void btnPayout_Click(object sender, EventArgs e)
         {
-            String q1 = "INSERT INTO HJUAL VALUES ('" + lblNoTrans.Text + "','P0001',TO_DATE('" + p.thn +
+            String q1 = "INSERT INTO niya.HJUAL VALUES ('" + lblNoTrans.Text + "','P0001',TO_DATE('" + p.thn +
                         "-" + p.bln + "-" + p.tgl + " 10:30:44','YYYY-MM-DD HH24:MI:SS')," + grandtotal + ")";
             OracleCommand cmdpo = new OracleCommand(q1, f.conn);
             cmdpo.ExecuteNonQuery();
@@ -235,13 +235,13 @@ namespace Proyek
                 String idh = lblNoTrans.Text;
                 String jm = gridtest.Rows[i].Cells[2].Value.ToString();
                 String st = gridtest.Rows[i].Cells[6].Value.ToString();
-                String q2 = "insert into djual values('" + idb + "','" + idh + "','" + jm + "','" + st + "')";
+                String q2 = "insert into niya.djual values('" + idb + "','" + idh + "','" + jm + "','" + st + "')";
                 cmdpo = new OracleCommand(q2, f.conn);
                 cmdpo.ExecuteNonQuery();
             }
             String idm = cbbMember.Text;
             int totalp = Convert.ToInt32(lblCurrentPoints.Text) + Convert.ToInt32(lblPoints.Text);
-            String q3 = "update point_history set point=" + totalp + " where id_member = '" + idm + "'";
+            String q3 = "update niya.point_history set point=" + totalp + " where id_member = '" + idm + "'";
             cmdpo = new OracleCommand(q3, f.conn);
             cmdpo.ExecuteNonQuery();
             MessageBox.Show("Transaction Succeed");

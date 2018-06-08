@@ -45,7 +45,7 @@ namespace Proyek
 
         public void setGridProducts()
         {
-            String q1 = "select id_barang, nama_barang from barang";
+            String q1 = "select id_barang, nama_barang from niya.barang";
             daProduct = new OracleDataAdapter(q1, f.conn);
             dsProduct = new DataSet();
             daProduct.Fill(dsProduct);
@@ -69,7 +69,7 @@ namespace Proyek
                 bln = "0" + bln;
             }
             String t = "HJ" + bln + tgl + thn;
-            String q1 = "select count(id_hjual) from hjual where id_hjual like '" + t + "%'";
+            String q1 = "select count(id_hjual) from niya.hjual where id_hjual like '" + t + "%'";
             cmd = new OracleCommand(q1, f.conn);
             int ctr = Convert.ToInt32(cmd.ExecuteScalar())+1;
             t+=ctr.ToString("D3");
@@ -81,7 +81,7 @@ namespace Proyek
         }
         public void setAutoComplete()
         {
-            String q1 = "select nama_member from member";
+            String q1 = "select nama_member from niya.member";
             OracleDataAdapter daTemp = new OracleDataAdapter(q1, f.conn);
             DataSet dsTemp = new DataSet();
             daTemp.Fill(dsTemp);
@@ -187,7 +187,7 @@ namespace Proyek
         private void btnSearchmember_Click(object sender, EventArgs e)
         {
             String nama_member = txtCariMember.Text;
-            String q1 = "select * from member where nama_member = '" + nama_member + "'";
+            String q1 = "select * from niya.member where nama_member = '" + nama_member + "'";
             OracleDataAdapter daTemp = new OracleDataAdapter(q1, f.conn);
             DataSet dsTemp = new DataSet();
             daTemp.Fill(dsTemp);
@@ -230,7 +230,7 @@ namespace Proyek
             }
             cmd = new OracleCommand();
             cmd.Connection = f.conn;
-            String q2 = "select sum(point) from point_history where id_member='" + txtIdMember.Text + "'";
+            String q2 = "select sum(point) from niya.point_history where id_member='" + txtIdMember.Text + "'";
             cmd.CommandText = q2;
             txtJumlahPoint.Text = cmd.ExecuteScalar().ToString();
         }
@@ -253,7 +253,7 @@ namespace Proyek
                 if (cbId.Checked)
                 {
                     String id = txtSearch.Text;
-                    String q1 = "select id_barang, nama_barang from barang where id_barang like '" + id + "%'";
+                    String q1 = "select id_barang, nama_barang from niya.barang where id_barang like '" + id + "%'";
                     daProduct = new OracleDataAdapter(q1, f.conn);
                     dsProduct = new DataSet();
                     daProduct.Fill(dsProduct);
@@ -262,7 +262,7 @@ namespace Proyek
                 else if (cbName.Checked)
                 {
                     String nama = txtSearch.Text;
-                    String q1 = "select id_barang, nama_barang from barang where nama_barang like '" + nama + "%'";
+                    String q1 = "select id_barang, nama_barang from niya.barang where nama_barang like '" + nama + "%'";
                     daProduct = new OracleDataAdapter(q1, f.conn);
                     dsProduct = new DataSet();
                     daProduct.Fill(dsProduct);
@@ -271,7 +271,7 @@ namespace Proyek
                 else if (cbBrand.Checked)
                 {
                     String brand = txtSearch.Text;
-                    String q1 = "select b.id_barang, b.nama_barang from barang b, merk m where m.nama_merk like '" + 
+                    String q1 = "select b.id_barang, b.nama_barang from niya.barang b, niya.merk m where m.nama_merk like '" + 
                                 brand + "%' and m.id_merk = b.id_merk";
                     daProduct = new OracleDataAdapter(q1, f.conn);
                     dsProduct = new DataSet();
@@ -281,7 +281,7 @@ namespace Proyek
                 else if (cbCategory.Checked)
                 {
                     String category = txtSearch.Text;
-                    String q1 = "select b.id_barang, b.nama_barang from barang b, kategori k where k.nama_kategori like '" + 
+                    String q1 = "select b.id_barang, b.nama_barang from niya.barang b, niya.kategori k where k.nama_kategori like '" + 
                                 category + "%' and k.id_kategori = b.id_kategori";
                     daProduct = new OracleDataAdapter(q1, f.conn);
                     dsProduct = new DataSet();
@@ -327,14 +327,14 @@ namespace Proyek
             String q1 = "";
             if (pbFotoMember.Image == null)
             {
-                q1 = "INSERT INTO MEMBER VALUES ('" + id + "','" + nama + "',TO_DATE('" + tahun + "-" + bulan + "-" + tanggal +
+                q1 = "INSERT INTO niya.MEMBER VALUES ('" + id + "','" + nama + "',TO_DATE('" + tahun + "-" + bulan + "-" + tanggal +
                             "','YYYY-MM-DD')," + gender + ",'" + email + "','" + alamat + "','NULL','ABC001')";
             }
             else
             {
                 String file = pbFotoMember.Image.Tag.ToString();
                 file = Path.GetFileName(file);
-                q1 = "INSERT INTO MEMBER VALUES ('" + id + "','" + nama + "',TO_DATE('" + tahun + "-" + bulan + "-" + tanggal +
+                q1 = "INSERT INTO niya.MEMBER VALUES ('" + id + "','" + nama + "',TO_DATE('" + tahun + "-" + bulan + "-" + tanggal +
                             "','YYYY-MM-DD')," + gender + ",'" + email + "','" + alamat + "','" + file + "','ABC001')";
             } 
             OracleCommand c1 = new OracleCommand(q1, f.conn);
@@ -364,7 +364,7 @@ namespace Proyek
             String q1 = "";
             if (pbFotoMember.Image == null)
             {
-                q1 = "update member set nama_member='" + nama +
+                q1 = "update niya.member set nama_member='" + nama +
                             "', alamat_member='" + alamat +
                             "', email_member='" + email +
                             "', jk_member='" + gender +
@@ -374,7 +374,7 @@ namespace Proyek
             {
                 String file = pbFotoMember.Image.Tag.ToString();
                 file = Path.GetFileName(file);
-                q1 = "update member set nama_member='" + nama +
+                q1 = "update niya.member set nama_member='" + nama +
                             "', alamat_member='" + alamat +
                             "', email_member='" + email +
                             "', jk_member='" + gender +
@@ -401,10 +401,10 @@ namespace Proyek
             String stock = dsTemp.Tables[0].Rows[0][6].ToString();
 
             OracleCommand cmd = new OracleCommand();
-            String brand = "select nama_merk from merk where id_merk = '" + dsTemp.Tables[0].Rows[0][2].ToString() + "'";
+            String brand = "select nama_merk from niya.merk where id_merk = '" + dsTemp.Tables[0].Rows[0][2].ToString() + "'";
             cmd = new OracleCommand(brand, f.conn);
             brand = cmd.ExecuteScalar().ToString();
-            String category = "select nama_kategori from kategori where id_kategori = '" + dsTemp.Tables[0].Rows[0][1].ToString() + "'";
+            String category = "select nama_kategori from niya.kategori where id_kategori = '" + dsTemp.Tables[0].Rows[0][1].ToString() + "'";
             cmd = new OracleCommand(category, f.conn);
             category = cmd.ExecuteScalar().ToString();
             lblId.Text = id_barang;

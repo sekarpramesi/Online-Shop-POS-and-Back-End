@@ -50,7 +50,7 @@ namespace Proyek
         
         public void initPegawai()
         {
-            String q1 = "select * from pegawai";
+            String q1 = "select * from niya.pegawai";
             daPegawai = new OracleDataAdapter(q1, f.conn);
             daPegawai.Fill(dsPegawai);
             gridPegawai.DataSource = dsPegawai.Tables[0];
@@ -58,7 +58,7 @@ namespace Proyek
 
         public void initMember()
         {
-            String q1 = "select * from member";
+            String q1 = "select * from niya.member";
             daMember = new OracleDataAdapter(q1, f.conn);
             daMember.Fill(dsMember);
             btnSimpanMember.DataSource = dsMember.Tables[0];
@@ -66,7 +66,7 @@ namespace Proyek
 
         public void initSupplier()
         {
-            String q1 = "select * from supplier";
+            String q1 = "select * from niya.supplier";
             daSupplier = new OracleDataAdapter(q1, f.conn);
             daSupplier.Fill(dsSupplier);
             gridSupplier.DataSource = dsSupplier.Tables[0];
@@ -74,7 +74,7 @@ namespace Proyek
 
         public void setgridHjual()
         {
-            String q1 = "select * from hjual";
+            String q1 = "select * from niya.hjual";
             daHjual = new OracleDataAdapter(q1, f.conn);
             daHjual.Fill(dsHjual);
             gridHjual.DataSource = dsHjual.Tables[0];
@@ -112,7 +112,7 @@ namespace Proyek
         {
             int index = e.RowIndex;
             String id_member = btnSimpanMember.Rows[index].Cells[0].Value.ToString();
-            String q2 = "select h.id_hjual,h.tanggal_hjual,p.point from point_history p,hjual h where h.id_hjual = p.id_hjual and p.id_member = '"+id_member+"'";
+            String q2 = "select h.id_hjual,h.tanggal_hjual,p.point from niya.point_history p,niya.hjual h where h.id_hjual = p.id_hjual and p.id_member = '"+id_member+"'";
             daPoint = new OracleDataAdapter(q2, f.conn);
             dsPoint = new DataSet();
             daPoint.Fill(dsPoint);
@@ -123,7 +123,7 @@ namespace Proyek
         {
             int index = e.RowIndex;
             String id_pegawai = gridPegawai.Rows[index].Cells[0].Value.ToString();
-            String q1 = "select * from absensi where id_pegawai = '" + id_pegawai + "'";
+            String q1 = "select * from niya.absensi where id_pegawai = '" + id_pegawai + "'";
             daAbsensi = new OracleDataAdapter(q1, f.conn);
             dsAbsensi = new DataSet();
             daAbsensi.Fill(dsAbsensi);
@@ -134,7 +134,7 @@ namespace Proyek
         {
             int index = e.RowIndex;
             String id_hjual = gridHjual.Rows[index].Cells[0].Value.ToString();
-            String q1 = "select * from djual where id_hjual = '" + id_hjual +"'";
+            String q1 = "select * from niya.djual where id_hjual = '" + id_hjual +"'";
             daDjual = new OracleDataAdapter(q1, f.conn);
             dsDjual = new DataSet();
             daDjual.Fill(dsDjual);

@@ -481,3 +481,35 @@ INSERT INTO POINT_HISTORY VALUES ('HJ21032018003','M0005',6.6);
 
 commit;
 
+create role kasir;
+
+grant connect,resource to kasir;
+grant create session to kasir;
+grant select,insert on niya.member to kasir;
+grant select,insert on niya.hjual to kasir;
+grant select,insert on niya.djual to kasir;
+grant select,insert on niya.barang to kasir;
+grant select on niya.merk to kasir;
+grant select on niya.kategori to kasir;
+
+create role gudang;
+
+grant connect,resource to gudang;
+grant create session to gudang;
+grant select,insert on niya.barang to kasir;
+grant select,insert on niya.hbeli to kasir;
+grant select,insert on niya.dbeli to kasir;
+
+create user P0001 identified by pss88001;
+grant connect,resource,create session,kasir to P0001;
+create user P0002 identified by ptm96002;
+grant connect,resource,create session,kasir to P0002;
+create user P0003 identified by pms80003;
+grant connect,resource,create session,kasir to P0003;
+
+create user P0004 identified by prm90004;
+grant connect,resource,create session,gudang to P0004;
+create user P0005 identified by ppp87005;
+grant connect,resource,create session,gudang to P0005;
+
+
