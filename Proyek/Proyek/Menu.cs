@@ -33,12 +33,7 @@ namespace Proyek
             fM.ShowDialog();
         }
 
-        private void btnReport_Click(object sender, EventArgs e)
-        {
-            Report fR = new Report();
-            fR.init(f);
-            fR.ShowDialog();
-        }
+        
 
         private void btnPointOfSales_Click(object sender, EventArgs e)
         {

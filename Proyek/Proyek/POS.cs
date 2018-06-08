@@ -30,6 +30,8 @@ namespace Proyek
             setTansno();
             lblTotalItems.Text = "0";
             lblTotalPrice.Text = "0";
+            lblDateTime.Text = DateTime.Now.Date.DayOfWeek + ", " + DateTime.Now.Date.Day + "/" +
+                               DateTime.Now.Date.Month + "/" + DateTime.Now.Date.Year;
         }
 
         DataSet dsProduct = new DataSet();
@@ -95,7 +97,7 @@ namespace Proyek
 
         private void POS_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("label atas belum terisi");
+            //MessageBox.Show("label atas belum terisi");
             pbFotoMember.Image = null;
             //this.reportViewer1.RefreshReport();
         }
@@ -191,9 +193,15 @@ namespace Proyek
             daTemp.Fill(dsTemp);
             txtIdMember.Text = dsTemp.Tables[0].Rows[0][0].ToString();
             txtNama.Text = dsTemp.Tables[0].Rows[0][1].ToString();
-            MessageBox.Show("datetime belum");
-            //DateTime dateTime = DateTime.ParseExact(dsTemp.Tables[0].Rows[0][2].ToString(), "yyyy-MM-dd HH24:mm:ss", CultureInfo.InvariantCulture);
-            //dtpTanggalLahir.Value = dateTime;
+            
+            String tanggal = dsTemp.Tables[0].Rows[0][2].ToString();
+            DateTime converted = Convert.ToDateTime(tanggal);
+            //MessageBox.Show(converted.Day.ToString() + " - " + converted.Month.ToString()  + "-" + converted.Year.ToString());
+            int tgl = Convert.ToInt32(converted.Day);
+            int mm = Convert.ToInt32(converted.Month);
+            int yy = Convert.ToInt32(converted.Year);
+            dtpTanggalLahir.Value = converted;
+            
             if (Convert.ToInt32(dsTemp.Tables[0].Rows[0][3]) == 0)
             {
                 cbPerempuan.Checked = true;

@@ -12,22 +12,23 @@
 				</div>
 				<!-- section title -->
 
-				<!-- Product Single -->
-				<div class="col-md-3 col-sm-6 col-xs-6">
-					<div class="product product-single">
-						<div class="product-thumb">
-							<img src="./img/product01.jpg" alt="">
-						</div>
-						<div class="product-body">
-							<h3 class="product-price">$32.50</h3>
-							<h2 class="product-name"><a href="#">Product Name Goes Here</a></h2>
-							<div class="product-btns">
-								<button class="primary-btn add-to-cart"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+				@foreach($laptop as $l)
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="product product-single">
+							<div class="product-thumb">
+								<img src="./Gambar/Laptop/{{$l->gambar_barang}}" alt="">
+							</div>
+							<div class="product-body">
+								<h3 class="product-price">Rp.{{$l->harga_jual_barang}}</h3>
+								<h2 class="product-name"><a href="#">{{$l->nama_barang}}</a></h2>
+								<div class="product-btns">
+									<button class="primary-btn add-to-cart"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- /Product Single -->
+				@endforeach
+
 			</div>
 			<!-- row Kamera-->
 			<div class="row">
@@ -40,20 +41,22 @@
 				<!-- section title -->
 
 				<!-- Product Single -->
+				@foreach($kamera as $k)
 				<div class="col-md-3 col-sm-6 col-xs-6">
 					<div class="product product-single">
 						<div class="product-thumb">
-							<img src="./img/product04.jpg" alt="">
+							<img src="./Gambar/Kamera/{{$k->gambar_barang}}" alt="">
 						</div>
 						<div class="product-body">
-							<h3 class="product-price">$32.50</h3>
-							<h2 class="product-name"><a href="#">Product Name Goes Here</a></h2>
+							<h3 class="product-price">Rp.{{$k->harga_jual_barang}}</h3>
+							<h2 class="product-name"><a href="#">{{$k->nama_barang}}</a></h2>
 							<div class="product-btns">
 								<button class="primary-btn add-to-cart"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
 							</div>
 						</div>
 					</div>
 				</div>
+				@endforeach
 				<!-- /Product Single -->
 			</div>
 			<!-- /row -->
@@ -68,20 +71,22 @@
 				<!-- section title -->
 
 				<!-- Product Single -->
+				@foreach($handphone as $hp)
 				<div class="col-md-3 col-sm-6 col-xs-6">
 					<div class="product product-single">
 						<div class="product-thumb">
-							<img src="./img/product04.jpg" alt="">
+							<img src="./Gambar/Handphone/{{$hp->gambar_barang}}" alt="">
 						</div>
 						<div class="product-body">
-							<h3 class="product-price">$32.50</h3>
-							<h2 class="product-name"><a href="#">Product Name Goes Here</a></h2>
+							<h3 class="product-price">Rp.{{$hp->harga_jual_barang}}</h3>
+							<h2 class="product-name"><a href="#">{{$hp->nama_barang}}</a></h2>
 							<div class="product-btns">
 								<button class="primary-btn add-to-cart"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
 							</div>
 						</div>
 					</div>
 				</div>
+				@endforeach
 				<!-- /Product Single -->
 			</div>
 			<!-- /row -->
@@ -96,20 +101,22 @@
 				<!-- section title -->
 
 				<!-- Product Single -->
+				@foreach($tablet as $t)
 				<div class="col-md-3 col-sm-6 col-xs-6">
 					<div class="product product-single">
 						<div class="product-thumb">
-							<img src="./img/product04.jpg" alt="">
+							<img src="./Gambar/Tablet/{{$t->gambar_barang}}" alt="">
 						</div>
 						<div class="product-body">
-							<h3 class="product-price">$32.50</h3>
-							<h2 class="product-name"><a href="#">Product Name Goes Here</a></h2>
+							<h3 class="product-price">Rp.{{$t->harga_jual_barang}}</h3>
+							<h2 class="product-name"><a href="#">{{$t->nama_barang}}</a></h2>
 							<div class="product-btns">
 								<button class="primary-btn add-to-cart"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
 							</div>
 						</div>
 					</div>
 				</div>
+				@endforeach
 				<!-- /Product Single -->
 			</div>
 			<!-- /row -->
@@ -124,20 +131,22 @@
 				<!-- section title -->
 
 				<!-- Product Single -->
+				@foreach($powerbank as $pb)
 				<div class="col-md-3 col-sm-6 col-xs-6">
 					<div class="product product-single">
 						<div class="product-thumb">
-							<img src="./img/product04.jpg" alt="">
+							<img src="./Gambar/Powerbank/{{$pb->gambar_barang}}" alt="">
 						</div>
 						<div class="product-body">
-							<h3 class="product-price">$32.50</h3>
-							<h2 class="product-name"><a href="#">Product Name Goes Here</a></h2>
+							<h3 class="product-price">Rp.{{$pb->harga_jual_barang}}</h3>
+							<h2 class="product-name"><a href="#">{{$pb->nama_barang}}</a></h2>
 							<div class="product-btns">
 								<button class="primary-btn add-to-cart"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
 							</div>
 						</div>
 					</div>
 				</div>
+				@endforeach
 				<!-- /Product Single -->
 			</div>
 			<!-- /row -->	

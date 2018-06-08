@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DB;
 
 class HomeController extends Controller
 {
@@ -13,7 +14,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home.index');
+        $laptop = DB::select('select * from barang where id_kategori=? and rownum<5',['K0001']);
+        $kamera = DB::select('select * from barang where id_kategori=? and rownum<5',['K0002']);
+        $handphone = DB::select('select * from barang where id_kategori=? and rownum<5',['K0003']);
+        $tablet = DB::select('select * from barang where id_kategori=? and rownum<5',['K0004']);
+        $powerbank = DB::select('select * from barang where id_kategori=? and rownum<5',['K0005']);
+        return view('home.index',['laptop'=>$laptop,'kamera'=>$kamera,'handphone'=>$handphone,
+            'tablet'=>$tablet,'powerbank'=>$powerbank]);
     }
 
     /**

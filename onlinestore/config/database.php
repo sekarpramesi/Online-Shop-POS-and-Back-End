@@ -77,6 +77,16 @@ return [
             'charset' => 'utf8',
             'prefix' => '',
         ],
+        'oracle'=>[
+            'driver' => 'oracle',
+            'host' => '127.0.0.1',
+            'port' => '1521',
+            'database' => 'ORCL', // SID IN UPPER CASE
+            'username' => 'niya',
+            'password' => 'niya',
+            'charset' => '',
+            'prefix' => '',
+        ],
 
     ],
 

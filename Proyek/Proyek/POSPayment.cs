@@ -70,6 +70,8 @@ namespace Proyek
         private void POSPayment_Load(object sender, EventArgs e)
         {
             lblNoTrans.Text = p.lblTransactionNo.Text;
+            lblDateTime.Text = DateTime.Now.Date.DayOfWeek + ", " + DateTime.Now.Date.Day + "/" +
+                               DateTime.Now.Date.Month + "/" + DateTime.Now.Date.Year;
         }
 
         private void cbbMember_SelectedIndexChanged(object sender, EventArgs e)
