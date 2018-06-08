@@ -3,8 +3,15 @@
 		<div class="container">
 			<!-- row -->
 			<div class="row">
+
+
 				<!-- footer widget -->
-				<div class="col-md-3 col-sm-6 col-xs-6">
+				<div class="col-md-4 col-sm-6 col-xs-6">
+				</div>
+				<!-- /footer widget -->
+
+				<!-- footer widget -->
+				<div class="col-md-4 col-sm-6 col-xs-6">
 					<div class="footer">
 						<!-- footer logo -->
 						<div class="footer-logo">
@@ -14,7 +21,7 @@
 						</div>
 						<!-- /footer logo -->
 
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+						<p>Proyek PCS</p>
 
 						<!-- footer social -->
 						<ul class="footer-social">
@@ -27,42 +34,18 @@
 						<!-- /footer social -->
 					</div>
 				</div>
-				<!-- /footer widget -->
-
-				<!-- footer widget -->
-				<div class="col-md-3 col-sm-6 col-xs-6">
-					<div class="footer">
-						<h3 class="footer-header">My Account</h3>
-						<ul class="list-links">
-							<li><a href="#">My Account</a></li>
-							<li><a href="#">My Wishlist</a></li>
-							<li><a href="#">Compare</a></li>
-							<li><a href="#">Checkout</a></li>
-							<li><a href="#">Login</a></li>
-						</ul>
-					</div>
-				</div>
-				<!-- /footer widget -->
+				<!-- /footer widget -->				
 
 				<div class="clearfix visible-sm visible-xs"></div>
 
 				<!-- footer widget -->
-				<div class="col-md-3 col-sm-6 col-xs-6">
-					<div class="footer">
-						<h3 class="footer-header">Customer Service</h3>
-						<ul class="list-links">
-							<li><a href="#">About Us</a></li>
-							<li><a href="#">Shiping & Return</a></li>
-							<li><a href="#">Shiping Guide</a></li>
-							<li><a href="#">FAQ</a></li>
-						</ul>
-					</div>
+				<div class="col-md-4 col-sm-6 col-xs-6">
 				</div>
 				<!-- /footer widget -->
 
-				<!-- footer subscribe -->
+				<!-- footer subscribe ->
 				<div class="col-md-3 col-sm-6 col-xs-6">
-					<div class="footer">
+					<!--<div class="footer">
 						<h3 class="footer-header">Stay Connected</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
 						<form>
@@ -71,23 +54,24 @@
 							</div>
 							<button class="primary-btn">Join Newslatter</button>
 						</form>
-					</div>
+					</div>->
 				</div>
-				<!-- /footer subscribe -->
+				<-- /footer subscribe -->
 			</div>
 			<!-- /row -->
-			<hr>
+			<!--<hr>-->
 			<!-- row -->
 			<div class="row">
+				<!--
 				<div class="col-md-8 col-md-offset-2 text-center">
-					<!-- footer copyright -->
+					<- footer copyright --
 					<div class="footer-copyright">
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						<- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --
 						Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -
 					</div>
-					<!-- /footer copyright -->
-				</div>
+					 /footer copyright -->
+				<!--</div>-->
 			</div>
 			<!-- /row -->
 		</div>

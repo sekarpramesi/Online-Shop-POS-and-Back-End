@@ -811,7 +811,7 @@
             this.dtpTanggalLahir.CustomFormat = "";
             this.dtpTanggalLahir.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpTanggalLahir.Location = new System.Drawing.Point(479, 166);
-            this.dtpTanggalLahir.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dtpTanggalLahir.MinimumSize = new System.Drawing.Size(4, 29);
             this.dtpTanggalLahir.Name = "dtpTanggalLahir";
             this.dtpTanggalLahir.Size = new System.Drawing.Size(207, 29);
             this.dtpTanggalLahir.TabIndex = 20;
@@ -1123,18 +1123,15 @@
         private MetroFramework.Controls.MetroLabel metroLabel7;
         private MetroFramework.Controls.MetroTextBox txtSearch;
         private MetroFramework.Controls.MetroLabel metroLabel1;
-        private MetroFramework.Controls.MetroLabel lblTransactionNo;
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private MetroFramework.Controls.MetroLabel lblDateTime;
         private MetroFramework.Controls.MetroLabel metroLabel5;
         private MetroFramework.Controls.MetroLabel lblCashierName;
         private MetroFramework.Controls.MetroLabel metroLabel8;
-        private MetroFramework.Controls.MetroLabel lblTotalPrice;
         private MetroFramework.Controls.MetroLabel metroLabel14;
         private MetroFramework.Controls.MetroLabel lblTotalItems;
         private MetroFramework.Controls.MetroLabel metroLabel12;
         private MetroFramework.Controls.MetroPanel panelProductInfo;
-        private MetroFramework.Controls.MetroGrid gridDTrans;
         private MetroFramework.Controls.MetroGrid gridProductList;
         private System.Windows.Forms.DataGridViewTextBoxColumn dId;
         private System.Windows.Forms.DataGridViewTextBoxColumn dName;
@@ -1191,6 +1188,9 @@
         private MetroFramework.Controls.MetroTile btnSearchitem;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        public MetroFramework.Controls.MetroGrid gridDTrans;
+        public MetroFramework.Controls.MetroLabel lblTotalPrice;
+        public MetroFramework.Controls.MetroLabel lblTransactionNo;
 
     }
 }

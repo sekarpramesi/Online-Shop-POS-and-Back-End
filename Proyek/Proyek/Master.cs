@@ -28,6 +28,7 @@ namespace Proyek
             initMember();
             initPegawai();
             initSupplier();
+            setgridHjual();
         }
         DataSet dsMember = new DataSet();
         OracleDataAdapter daMember = new OracleDataAdapter();
@@ -40,7 +41,13 @@ namespace Proyek
         DataSet dsAbsensi = new DataSet();
         OracleDataAdapter daAbsensi = new OracleDataAdapter();
         OracleCommandBuilder cmdBuilder = new OracleCommandBuilder();
-
+        DataSet dsBarang = new DataSet();
+        OracleDataAdapter daBarang = new OracleDataAdapter();
+        DataSet dsHjual = new DataSet();
+        OracleDataAdapter daHjual = new OracleDataAdapter();
+        DataSet dsDjual = new DataSet();
+        OracleDataAdapter daDjual = new OracleDataAdapter();
+        
         public void initPegawai()
         {
             String q1 = "select * from pegawai";
@@ -63,6 +70,14 @@ namespace Proyek
             daSupplier = new OracleDataAdapter(q1, f.conn);
             daSupplier.Fill(dsSupplier);
             gridSupplier.DataSource = dsSupplier.Tables[0];
+        }
+
+        public void setgridHjual()
+        {
+            String q1 = "select * from hjual";
+            daHjual = new OracleDataAdapter(q1, f.conn);
+            daHjual.Fill(dsHjual);
+            gridHjual.DataSource = dsHjual.Tables[0];
         }
 
         private void Master_Load(object sender, EventArgs e)
@@ -113,6 +128,26 @@ namespace Proyek
             dsAbsensi = new DataSet();
             daAbsensi.Fill(dsAbsensi);
             gridAbsensi.DataSource = dsAbsensi.Tables[0];
+        }
+
+        private void gridHjual_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int index = e.RowIndex;
+            String id_hjual = gridHjual.Rows[index].Cells[0].Value.ToString();
+            String q1 = "select * from djual where id_hjual = '" + id_hjual +"'";
+            daDjual = new OracleDataAdapter(q1, f.conn);
+            dsDjual = new DataSet();
+            daDjual.Fill(dsDjual);
+            gridDjual.DataSource = dsDjual.Tables[0];
+        }
+
+        private void metroTile1_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            cmdBuilder = new OracleCommandBuilder(daHjual);
+            daHjual.Update(dsHjual);
+            cmdBuilder = new OracleCommandBuilder(daDjual);
+            daDjual.Update(dsDjual);
         }
         
     }

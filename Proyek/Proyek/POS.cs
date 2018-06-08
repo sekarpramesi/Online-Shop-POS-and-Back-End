@@ -27,6 +27,9 @@ namespace Proyek
             f = f1;
             setGridProducts();
             setAutoComplete();
+            setTansno();
+            lblTotalItems.Text = "0";
+            lblTotalPrice.Text = "0";
         }
 
         DataSet dsProduct = new DataSet();
@@ -46,7 +49,30 @@ namespace Proyek
             daProduct.Fill(dsProduct);
             gridProductList.DataSource = dsProduct.Tables[0];
         }
-        
+        public string tgl = "";
+        public string bln = "";
+        public string thn = "";
+        public void setTansno()
+        {
+            DateTime dt = DateTime.Now.Date;
+            tgl = dt.Date.Day.ToString();
+            bln = dt.Date.Month.ToString();
+            thn = dt.Date.Year.ToString();
+            if (Convert.ToInt32(tgl) < 10)
+            {
+                tgl = "0" + tgl;
+            }
+            if (Convert.ToInt32(bln) < 10)
+            {
+                bln = "0" + bln;
+            }
+            String t = "HJ" + bln + tgl + thn;
+            String q1 = "select count(id_hjual) from hjual where id_hjual like '" + t + "%'";
+            cmd = new OracleCommand(q1, f.conn);
+            int ctr = Convert.ToInt32(cmd.ExecuteScalar())+1;
+            t+=ctr.ToString("D3");
+            lblTransactionNo.Text = t;
+        }
         public void setGridDTrans()
         {
 
@@ -70,6 +96,7 @@ namespace Proyek
         private void POS_Load(object sender, EventArgs e)
         {
             MessageBox.Show("label atas belum terisi");
+            pbFotoMember.Image = null;
             //this.reportViewer1.RefreshReport();
         }
 
@@ -236,7 +263,7 @@ namespace Proyek
                 else if (cbBrand.Checked)
                 {
                     String brand = txtSearch.Text;
-                    String q1 = "select b.id_barang, b.nama_barang from barang b, merk m where m.merk like '" + 
+                    String q1 = "select b.id_barang, b.nama_barang from barang b, merk m where m.nama_merk like '" + 
                                 brand + "%' and m.id_merk = b.id_merk";
                     daProduct = new OracleDataAdapter(q1, f.conn);
                     dsProduct = new DataSet();
@@ -289,14 +316,22 @@ namespace Proyek
             String tanggal = dtpTanggalLahir.Value.Day.ToString();
             String bulan = dtpTanggalLahir.Value.Month.ToString();
             String tahun = dtpTanggalLahir.Value.Year.ToString();
-            String file = pbFotoMember.Image.Tag.ToString();
-            file = Path.GetFileName(file);
-            String q1 = "INSERT INTO MEMBER VALUES ('"+id+"','"+nama+"',TO_DATE('"+tahun+"-"+bulan+"-"+tanggal+
-                        "','YYYY-MM-DD'),"+gender+",'"+email+"','"+alamat+"','"+file+"','ABC001')";
-            MessageBox.Show("Tolong Diganti q1 nya(id tidak autogen), password gtw, kalo sudah, commentnya diilangin");
-            //cmd.Connection = f.conn;
-            //cmd.CommandText = q1;
-            //cmd.ExecuteNonQuery();
+            String q1 = "";
+            if (pbFotoMember.Image == null)
+            {
+                q1 = "INSERT INTO MEMBER VALUES ('" + id + "','" + nama + "',TO_DATE('" + tahun + "-" + bulan + "-" + tanggal +
+                            "','YYYY-MM-DD')," + gender + ",'" + email + "','" + alamat + "','NULL','ABC001')";
+            }
+            else
+            {
+                String file = pbFotoMember.Image.Tag.ToString();
+                file = Path.GetFileName(file);
+                q1 = "INSERT INTO MEMBER VALUES ('" + id + "','" + nama + "',TO_DATE('" + tahun + "-" + bulan + "-" + tanggal +
+                            "','YYYY-MM-DD')," + gender + ",'" + email + "','" + alamat + "','" + file + "','ABC001')";
+            } 
+            OracleCommand c1 = new OracleCommand(q1, f.conn);
+            c1.ExecuteNonQuery(); 
+            MessageBox.Show("added");
         }
 
         private void btnSimpan_Click(object sender, EventArgs e)
@@ -318,18 +353,29 @@ namespace Proyek
             String tanggal = dtpTanggalLahir.Value.Day.ToString();
             String bulan = dtpTanggalLahir.Value.Month.ToString();
             String tahun = dtpTanggalLahir.Value.Year.ToString();
-            String file = pbFotoMember.Image.Tag.ToString();
-            file = Path.GetFileName(file);
-            String q1 = "update member set nama_member='" + nama +
-                        "', alamat_member='" + alamat +
-                        "', email_member='" + email +
-                        "', jk_member='" + gender +
-                        "', foto_member='" + file +
-                        "' where id_member='" + id + "'";
-            MessageBox.Show("sama kayak member baru, password gtw, kalo sudah commentnya diilangin");
-            //cmd.Connection = f.conn;
-            //cmd.CommandText = q1;
-            //cmd.ExecuteNonQuery();
+            String q1 = "";
+            if (pbFotoMember.Image == null)
+            {
+                q1 = "update member set nama_member='" + nama +
+                            "', alamat_member='" + alamat +
+                            "', email_member='" + email +
+                            "', jk_member='" + gender +
+                            "', foto_member=NULL where id_member='" + id + "'";
+            }
+            else
+            {
+                String file = pbFotoMember.Image.Tag.ToString();
+                file = Path.GetFileName(file);
+                q1 = "update member set nama_member='" + nama +
+                            "', alamat_member='" + alamat +
+                            "', email_member='" + email +
+                            "', jk_member='" + gender +
+                            "', foto_member='" + file +
+                            "' where id_member='" + id + "'";
+            }
+            OracleCommand c1 = new OracleCommand(q1, f.conn);
+            c1.ExecuteNonQuery();
+            MessageBox.Show("updated");
         }
 
         private void gridProductList_CellClick(object sender, DataGridViewCellEventArgs e)

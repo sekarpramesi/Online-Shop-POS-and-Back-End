@@ -22,7 +22,7 @@ namespace Proyek
         public OracleConnection conn = new OracleConnection();
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            conn.ConnectionString = "user id=" + txtUsername.Text + ";password=" + txtPassword.Text + ";data source=orcl;";
+            conn.ConnectionString = "user id=" + txtUsername.Text + ";password=" + txtPassword.Text + ";data source=localhost;";
 
             try
             {

@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
@@ -48,7 +48,6 @@
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.lblNoTrans = new MetroFramework.Controls.MetroLabel();
             this.lblDateTime = new MetroFramework.Controls.MetroLabel();
-            this.gridSummary = new MetroFramework.Controls.MetroGrid();
             this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
             this.btnCancel = new MetroFramework.Controls.MetroTile();
@@ -61,7 +60,16 @@
             this.lblPoints = new MetroFramework.Controls.MetroLabel();
             this.tbCash = new MetroFramework.Controls.MetroTextBox();
             this.cbbMember = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.gridSummary)).BeginInit();
+            this.gridtest = new MetroFramework.Controls.MetroGrid();
+            this.dId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dPlus = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dMinus = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dSubtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnPayout = new MetroFramework.Controls.MetroTile();
+            ((System.ComponentModel.ISupportInitialize)(this.gridtest)).BeginInit();
             this.SuspendLayout();
             // 
             // metroLabel1
@@ -110,6 +118,7 @@
             this.btn1.Text = "1";
             this.btn1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn1.UseSelectable = true;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // btn2
             // 
@@ -121,6 +130,7 @@
             this.btn2.Text = "2";
             this.btn2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn2.UseSelectable = true;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btn3
             // 
@@ -132,6 +142,7 @@
             this.btn3.Text = "3";
             this.btn3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn3.UseSelectable = true;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // btn4
             // 
@@ -143,6 +154,7 @@
             this.btn4.Text = "4";
             this.btn4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn4.UseSelectable = true;
+            this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
             // btn5
             // 
@@ -154,6 +166,7 @@
             this.btn5.Text = "5";
             this.btn5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn5.UseSelectable = true;
+            this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
             // btn6
             // 
@@ -165,6 +178,7 @@
             this.btn6.Text = "6";
             this.btn6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn6.UseSelectable = true;
+            this.btn6.Click += new System.EventHandler(this.btn6_Click);
             // 
             // btn8
             // 
@@ -176,6 +190,7 @@
             this.btn8.Text = "8";
             this.btn8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn8.UseSelectable = true;
+            this.btn8.Click += new System.EventHandler(this.btn8_Click);
             // 
             // btn7
             // 
@@ -187,6 +202,7 @@
             this.btn7.Text = "7";
             this.btn7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn7.UseSelectable = true;
+            this.btn7.Click += new System.EventHandler(this.btn7_Click);
             // 
             // btn9
             // 
@@ -198,6 +214,7 @@
             this.btn9.Text = "9";
             this.btn9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn9.UseSelectable = true;
+            this.btn9.Click += new System.EventHandler(this.btn9_Click);
             // 
             // btnConfirm
             // 
@@ -239,53 +256,6 @@
             this.lblDateTime.TabIndex = 17;
             this.lblDateTime.Text = "metroLabel7";
             // 
-            // gridSummary
-            // 
-            this.gridSummary.AllowUserToAddRows = false;
-            this.gridSummary.AllowUserToDeleteRows = false;
-            this.gridSummary.AllowUserToResizeRows = false;
-            this.gridSummary.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.gridSummary.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gridSummary.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.gridSummary.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridSummary.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
-            this.gridSummary.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridSummary.DefaultCellStyle = dataGridViewCellStyle14;
-            this.gridSummary.EnableHeadersVisualStyles = false;
-            this.gridSummary.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.gridSummary.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.gridSummary.Location = new System.Drawing.Point(19, 111);
-            this.gridSummary.Name = "gridSummary";
-            this.gridSummary.ReadOnly = true;
-            this.gridSummary.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridSummary.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
-            this.gridSummary.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.gridSummary.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridSummary.Size = new System.Drawing.Size(443, 150);
-            this.gridSummary.TabIndex = 18;
-            this.gridSummary.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
             // metroLabel8
             // 
             this.metroLabel8.AutoSize = true;
@@ -315,6 +285,7 @@
             this.btnCancel.Text = "Cancel";
             this.btnCancel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnCancel.UseSelectable = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btn0
             // 
@@ -326,6 +297,7 @@
             this.btn0.Text = "0";
             this.btn0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn0.UseSelectable = true;
+            this.btn0.Click += new System.EventHandler(this.btn0_Click);
             // 
             // btnDecimal
             // 
@@ -338,6 +310,7 @@
             this.btnDecimal.Text = ".";
             this.btnDecimal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDecimal.UseSelectable = true;
+            this.btnDecimal.Click += new System.EventHandler(this.btnDecimal_Click);
             // 
             // btnClear
             // 
@@ -429,11 +402,132 @@
             this.cbbMember.TabIndex = 32;
             this.cbbMember.SelectedIndexChanged += new System.EventHandler(this.cbbMember_SelectedIndexChanged);
             // 
+            // gridtest
+            // 
+            this.gridtest.AllowUserToAddRows = false;
+            this.gridtest.AllowUserToDeleteRows = false;
+            this.gridtest.AllowUserToResizeRows = false;
+            this.gridtest.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.gridtest.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gridtest.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.gridtest.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridtest.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.gridtest.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridtest.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dId,
+            this.dName,
+            this.dQty,
+            this.dPlus,
+            this.dMinus,
+            this.dPrice,
+            this.dSubtotal});
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridtest.DefaultCellStyle = dataGridViewCellStyle5;
+            this.gridtest.EnableHeadersVisualStyles = false;
+            this.gridtest.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.gridtest.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.gridtest.Location = new System.Drawing.Point(23, 102);
+            this.gridtest.Name = "gridtest";
+            this.gridtest.ReadOnly = true;
+            this.gridtest.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridtest.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.gridtest.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.gridtest.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gridtest.Size = new System.Drawing.Size(439, 159);
+            this.gridtest.TabIndex = 33;
+            this.gridtest.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // dId
+            // 
+            this.dId.HeaderText = "ID";
+            this.dId.Name = "dId";
+            this.dId.ReadOnly = true;
+            this.dId.Width = 50;
+            // 
+            // dName
+            // 
+            this.dName.HeaderText = "Name";
+            this.dName.Name = "dName";
+            this.dName.ReadOnly = true;
+            // 
+            // dQty
+            // 
+            this.dQty.HeaderText = "Qty";
+            this.dQty.Name = "dQty";
+            this.dQty.ReadOnly = true;
+            this.dQty.Width = 30;
+            // 
+            // dPlus
+            // 
+            this.dPlus.HeaderText = "+";
+            this.dPlus.Name = "dPlus";
+            this.dPlus.ReadOnly = true;
+            this.dPlus.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dPlus.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dPlus.Width = 25;
+            // 
+            // dMinus
+            // 
+            this.dMinus.HeaderText = "-";
+            this.dMinus.Name = "dMinus";
+            this.dMinus.ReadOnly = true;
+            this.dMinus.Width = 25;
+            // 
+            // dPrice
+            // 
+            this.dPrice.HeaderText = "Price";
+            this.dPrice.Name = "dPrice";
+            this.dPrice.ReadOnly = true;
+            this.dPrice.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dPrice.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dSubtotal
+            // 
+            this.dSubtotal.HeaderText = "Subtotal";
+            this.dSubtotal.Name = "dSubtotal";
+            this.dSubtotal.ReadOnly = true;
+            this.dSubtotal.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dSubtotal.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // btnPayout
+            // 
+            this.btnPayout.ActiveControl = null;
+            this.btnPayout.Location = new System.Drawing.Point(147, 480);
+            this.btnPayout.Name = "btnPayout";
+            this.btnPayout.Size = new System.Drawing.Size(119, 36);
+            this.btnPayout.TabIndex = 0;
+            this.btnPayout.Text = "Pay Out";
+            this.btnPayout.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnPayout.UseSelectable = true;
+            this.btnPayout.Click += new System.EventHandler(this.btnPayout_Click);
+            // 
             // POSPayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(482, 529);
+            this.Controls.Add(this.btnPayout);
+            this.Controls.Add(this.gridtest);
             this.Controls.Add(this.cbbMember);
             this.Controls.Add(this.tbCash);
             this.Controls.Add(this.lblPoints);
@@ -446,7 +540,6 @@
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.metroLabel9);
             this.Controls.Add(this.metroLabel8);
-            this.Controls.Add(this.gridSummary);
             this.Controls.Add(this.lblDateTime);
             this.Controls.Add(this.lblNoTrans);
             this.Controls.Add(this.metroLabel5);
@@ -467,7 +560,7 @@
             this.Name = "POSPayment";
             this.Text = "Payment Summary";
             this.Load += new System.EventHandler(this.POSPayment_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.gridSummary)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridtest)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -492,7 +585,6 @@
         private MetroFramework.Controls.MetroLabel metroLabel5;
         private MetroFramework.Controls.MetroLabel lblNoTrans;
         private MetroFramework.Controls.MetroLabel lblDateTime;
-        private MetroFramework.Controls.MetroGrid gridSummary;
         private MetroFramework.Controls.MetroLabel metroLabel8;
         private MetroFramework.Controls.MetroLabel metroLabel9;
         private MetroFramework.Controls.MetroTile btnCancel;
@@ -505,5 +597,14 @@
         private MetroFramework.Controls.MetroLabel lblPoints;
         private MetroFramework.Controls.MetroTextBox tbCash;
         private System.Windows.Forms.ComboBox cbbMember;
+        public MetroFramework.Controls.MetroGrid gridtest;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dQty;
+        private System.Windows.Forms.DataGridViewButtonColumn dPlus;
+        private System.Windows.Forms.DataGridViewButtonColumn dMinus;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dPrice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dSubtotal;
+        private MetroFramework.Controls.MetroTile btnPayout;
     }
 }

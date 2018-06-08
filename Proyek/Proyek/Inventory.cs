@@ -74,5 +74,10 @@ namespace Proyek
             cmdBuilder = new OracleCommandBuilder(daBarang);
             daBarang.Update(dsBarang);
         }
+
+        private void Inventory_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

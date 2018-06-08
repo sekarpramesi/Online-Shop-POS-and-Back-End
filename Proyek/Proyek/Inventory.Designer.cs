@@ -62,7 +62,7 @@
             this.tabInventory.Controls.Add(this.tabPageCatalogue);
             this.tabInventory.Location = new System.Drawing.Point(1, 53);
             this.tabInventory.Name = "tabInventory";
-            this.tabInventory.SelectedIndex = 1;
+            this.tabInventory.SelectedIndex = 0;
             this.tabInventory.Size = new System.Drawing.Size(915, 470);
             this.tabInventory.TabIndex = 0;
             this.tabInventory.UseSelectable = true;
@@ -297,6 +297,7 @@
             this.Controls.Add(this.tabInventory);
             this.Name = "Inventory";
             this.Text = "Inventory";
+            this.Load += new System.EventHandler(this.Inventory_Load);
             this.tabInventory.ResumeLayout(false);
             this.tabPageOrders.ResumeLayout(false);
             this.tabPageOrders.PerformLayout();
